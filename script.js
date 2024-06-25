@@ -1,3 +1,9 @@
 function addToDo(){
-    console.log("add button is clicked");
+   
+    const listItem = document.createElement('li');
+    const newTodo = document.getElementById('new-todo').value;
+   listItem.textContent = newTodo;
+   document.getElementById('todo-list').appendChild(listItem);
+   document.getElementById('new-todo').value ='';
+   
 }
